@@ -1,0 +1,254 @@
+
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+
+
+ <style>
+
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #c26d8a;
+}
+p {
+    
+    overflow-wrap: normal;
+    color: #ede8ea;
+}
+
+.header {
+  padding: 0;
+  font-size: 60px;
+  text-align: center;
+  background: #c26d8a;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+/* Fake image */
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: #c26d8a;
+   padding: 20px;
+   color: white;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #c26d8a;
+  color: white;
+
+}
+
+
+img {
+ padding: 0;
+  display: block;
+ width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+ 
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+
+ 
+ul{
+  list-style:none;  
+  margin:0;
+  padding:0;
+  width:97%;
+  border-radius:5px;  
+  margin:20px;  
+}
+ul li{
+  display:block;
+  height:20px; 
+  font-size: 30px; 
+  background:#c26d8a;
+  padding:10px;
+  color:white;
+
+  cursor:pointer;
+  
+}
+
+ul li:hover{
+  background:#FB8696;
+
+}
+ul li:last-child{
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
+}
+label:before{
+  height:3px;
+  width:20px;
+  background:white;
+  display:inline-block;
+  content:"";
+  box-shadow:0px -5px 0px 0px  white,
+             0px -10px 0px 0px white;
+  margin-right:10px;
+  transition:all .5s;
+  position:relative;
+  opacity:1;
+}
+label{
+  display:block;
+  background:#c26d8a;
+  padding:0;
+  font-size: 50px;
+  font-family: MV Boli;
+  color:white;  
+  cursor:pointer; 
+}
+input[type="checkbox"]{
+  visibility:hidden;
+  position:absolute;
+}
+#collapse:checked ~ li{
+  display:none;
+  margin-top:0; 
+}
+#collapse:checked + label:before{
+  position:sticky ;
+  right:calc(-160px);
+  opacity:1;
+  
+}
+
+
+.btn-t {
+
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: Blippo, fantasy;
+
+  
+}
+.btn-f {
+
+  background-color:black;
+  color: darkred;
+  font-size: 30px;
+  font-family: Blippo, fantasy;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+
+  
+}
+.btn-g {
+
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Blippo, fantasy;
+
+}
+
+.container{
+  text-align: center;
+}
+.mix{
+  color: white;
+  background-color: #823b53;
+}
+
+#rm
+{
+  text-decoration: none;
+  color: white;
+}
+
+ </style>
+
+
+
+
+</head>
+<body>
+
+<ul>
+      <input type="checkbox" id="collapse"/> 
+      <label for="collapse"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span class='mix'>Domina Florsheim<span> </label>    
+             
+      <li><a id='rm' href="{% url 'home' %}">Home</a></li>
+       <li><a id='rm' href="{% url 'about' %}">About me</a></li>
+       <li><a id='rm' href="{% url 'gallery' %}">Gallery</a></li>
+       <li><a  id='rm'href="{% url 'contact' %}">Contact me</a></li>
+       <li><a id='rm' href="{% url 'tribute' %}">Send Tribute</a></li>
+     
+</ul>
+
+
+
+
+<div class="header">
+  <h2> <img src="https://i.imgur.com/hinvdmC.jpg" alt="Girl in a jacket" class="center" >
+</h2>
+</div>
+
+
+
+
+
+<div class="card">
+      <h2>WELCOME FLORSHEIM WORLD!</h2>
+
+      <p> <b> Dominatrix |  Mistress | Disciplinarian<br>
+You like Corporal Punishment, Bondage, and humiliating predicaments, don’t you? I can tell--because I do, too! That’s why you’re here, one hand scrolling around as you think about me treating you like the little boy-slut that you are. You may squirm, but you secretly love that I want be your Mommy, punishing and verbally humiliating you. <br>You never really know what kinky thought I’m going to act on next. Perhaps I’ll come up with a bunch of new rules for you and make you follow them no matter what. Perhaps I’ll put you in chastity and tease you until you’re willing to do absolutely anything for an orgasm, no matter how embarrassing. Or maybe I’ll just stick my strap-on in your mouth and take you to my dungeon to make you worship! Do you think that your tiny cock can handle me? With my divine curves, silver tongue, and perfect breasts! <br>Domina Florsheim is going to have fun with you, little boy...<br>
+xoxo,<br>
+Domina Florsheim <br>
+Pro Domme & Humiliatrix <br>
+
+P.S. I hope that isn't a problem for you, because my curvy hips and luscious tits look amazing with a thick Strapon! I also enjoy sissy training and panty boys, so that pops up from time to time as well. With that said, you're sure to find tons of videos to get you off in my archive of my loyalfans videos. XO.<b> <br><br>
+ <a href="{% url 'about' %}"> <u><b> More About me > <b> </u></a> 
+  <p>
+
+  
+</div>
+
+
+<div class="footer">
+  <h4>All models appearing on this website are 18 years or older. All content is copyright by Penny Barber. By entering this site, you swear that you are of legal age in your area to view adult material and that you wish to view such material.</h4>
+  <h5>Follow me on Twitter @DominaFlorsheim<br>
+https://twitter.com/DominaFlorsheim<br>
+Copyright  2022 - 2023  DominaFlorsheim all rights reserved.</h6>
+</div>
+
+<div class="container">
+  <a href="https://twitter.com/DominaFlorsheim"></a>
+  <a href="https://fetlife.com/users/14554719"></a>
+  <a href="mailto:dominaflorsheim@yahoo.com?subject=Booking session"></a>
+  <button class="btn-t" onclick="window.location.href='https://twitter.com/DominaFlorsheim'">Twitter</button>
+  <button class="btn-f" onclick="window.location.href='https://fetlife.com/users/14554719'">Fetlife</button>
+  <button class="btn-g" onclick="window.location.href='mailto:dominaflorsheim@yahoo.com?subject=Booking session'">Mail</button>
+  
+  </div>
+
+
+</body>
+
+</html>
