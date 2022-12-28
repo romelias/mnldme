@@ -11,7 +11,7 @@
 body {
   font-family: Arial;
   padding: 20px;
-  background: #c26d8a;
+  background: #823b53
 }
 p {
     font-size: 20px;
@@ -41,8 +41,7 @@ p {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
-
- 
+/* 
 ul{
   list-style:none;  
   margin:0;
@@ -107,6 +106,34 @@ input[type="checkbox"]{
   opacity:1;
   
 }
+*/
+
+
+ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5e273a;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#rm:hover {
+  background-color: #111;
+}
+
 
 
 .btn-t {
@@ -115,7 +142,7 @@ input[type="checkbox"]{
   color: white;
   font-size: 100px;
   border: none;
-  border-radius: 40px;
+
   cursor: pointer;
   text-align: center;
   font-family: Bahnschrift SemiBold;
@@ -129,7 +156,7 @@ input[type="checkbox"]{
   font-size: 100px;
   font-family: Bahnschrift SemiBold;
   cursor: pointer;
-border-radius: 40px;
+
   border: none;
   text-align: center;
 
@@ -142,7 +169,7 @@ border-radius: 40px;
   border: none;
   font-size: 100px;
   cursor: pointer;
-  border-radius: 40px;
+ 
   text-align: center;
   font-family: Bahnschrift SemiBold;
 
@@ -162,20 +189,43 @@ border-radius: 40px;
 {
   text-decoration: none;
   color: white;
+  font-size: 25px;
 }
+
+#tp{
+ font-size: 30px;
+ color:#F6358A;
+ font-family: Franklin Gothic Medium;
+}
+
 table {
   color: white;
+  background-color:#5e273a;
   font-family: Franklin Gothic Medium;
   width: 100%;
-  padding: 40px;
+  padding: 20px;
   border: none;
   border-spacing: 50px;
+}
+td{
+  font-size: 25px;
 }
 h1{
   color: white;
   text-align: center;
-
 }
+#flr{
+  color:white;
+  background-color: #823b53;
+}
+.card{
+  background-color: #5e273a;
+}
+h4{
+  color: #F6358A;
+  font-size: 30px;
+}
+
 
  </style>
 
@@ -185,16 +235,17 @@ h1{
 </head>
 <body>
 
+
 <ul>
-      <input type="checkbox" id="collapse"/> 
-      <label for="collapse"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span class='mix'>Domina Florsheim<span> </label>    
-             
-      <li><a id='rm' href="{% url 'home' %}">Home</a></li>
-       <li><a id='rm' href="{% url 'about' %}">About me</a></li>
-       <li><a id='rm' href="{% url 'gallery' %}">Gallery</a></li>
-       <li><a  id='rm'href="{% url 'contact' %}">Contact me</a></li>
-       <li><a id='rm' href="{% url 'tribute' %}">Send Tribute</a></li>
-     
+  <li><a id='tp'>DOMINA FLORSHEIM</a></li>
+
+  <li><a id='rm' href="{% url 'home' %}">Home</a></li>
+   <li><a id='rm' href="{% url 'about' %}">About me</a></li>
+
+   <li><a id='rm' href="{% url 'gallery' %}">Gallery</a></li>
+   <li><a  id='rm'href="{% url 'contact' %}">Contact/Tribute</a></li>
+   <li><a id='rm' href="{% url 'clips' %}">Clips</a></li>
+   <li><a id='rm' href="{% url 'services' %}">Services</a></li>
 </ul>
 
 
@@ -202,19 +253,19 @@ h1{
 
 <br><br>
 
-<h1>About Florsheim<h1>
+<h1><span id='flr'>About Florsheim</span></h1>
 <table class="border-none">
    <tr>
       <td>Birthday</td>
       <td>1983-10-10</td>
       <td>Weight</td>
-      <td>135</td>
+      <td>55 kgs</td>
    </tr>
    <tr>
       <td>Hometown</td>
       <td>Manila,Philiphines</td>
       <td>Height</td>
-      <td>5'6"</td>
+      <td>5'2"</td>
    </tr>
    <tr>
       <td>Heritage</td>
@@ -236,7 +287,7 @@ h1{
    </tr>
    <tr>
       <td>Measurements</td>
-      <td>32-26-32</td>
+      <td>34-28-35</td>
       <td>Piercing</td>
       <td>Ears only</td>
    </tr>
@@ -244,7 +295,8 @@ h1{
 
 
 <div class="card">
-      <h4>WELCOME FLORSHEIM WORLD!</h4>
+      <h4>WELCOME TO FLORSHEIM WORLD!</h4>
+      <img src="https://i.imgur.com/Hkb4Ujv.jpg" class="center" >
 
       <p> Welcome to My world, the world of Femdom.
 The world in which men exist only to satisfy My desires.
@@ -261,7 +313,7 @@ Please Me with your wallet, intelligence and submission have your place at My fe
 </div>
 
 
-
+<br><br>
 
 
 <div class="container">

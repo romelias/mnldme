@@ -11,7 +11,7 @@
 body {
   font-family: Arial;
   padding: 20px;
-  background: #c26d8a;
+  background: #050A30;
 }
 p {
     
@@ -27,7 +27,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #823b53;
+  background-color: #191970;
 }
 
 li {
@@ -36,13 +36,13 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: goldenrod;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+#rm:hover {
   background-color: #111;
 }
 
@@ -97,7 +97,8 @@ li a:hover {
 #rm
 {
   text-decoration: none;
-  color: white;
+  color: gold;
+  font-size: 25px;
 }
 
 #tp{
@@ -115,11 +116,14 @@ li a:hover {
 
 <ul>
   <li><a id='tp'>DOMINA FLORSHEIM</a></li>
+
   <li><a id='rm' href="{% url 'home' %}">Home</a></li>
    <li><a id='rm' href="{% url 'about' %}">About me</a></li>
+
    <li><a id='rm' href="{% url 'gallery' %}">Gallery</a></li>
-   <li><a  id='rm'href="{% url 'contact' %}">Contact me</a></li>
-   <li><a id='rm' href="{% url 'tribute' %}">Send Tribute</a></li>
+   <li><a  id='rm'href="{% url 'contact' %}">Contact/Tribute</a></li>
+   <li><a id='rm' href="{% url 'clips' %}">Clips</a></li>
+   <li><a id='rm' href="{% url 'services' %}">Services</a></li>
 </ul>
 
 
@@ -127,7 +131,7 @@ li a:hover {
 
 
 
-
+<br><br>
 
 
 

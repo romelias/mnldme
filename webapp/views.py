@@ -15,5 +15,9 @@ def gallery(request):
 def contact(request):
     return render(request,'contact.html')
 
-def tribute(request):
-    return render(request,'tribute.html')
+def clips(request):
+    return render(request,'clips.html')
+
+
+def services(request):
+    return render(request,'services.html')

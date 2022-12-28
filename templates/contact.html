@@ -13,133 +13,92 @@ body {
   padding: 20px;
   background: #c26d8a;
 }
-p {
-    
-    overflow-wrap: normal;
-    color: #ede8ea;
-}
 
-
-
- 
-ul{
-  list-style:none;  
-  margin:0;
-  padding:0;
-  width:97%;
-  border-radius:5px;  
-  margin:20px;  
-}
-ul li{
-  display:block;
-  height:20px; 
-  font-size: 30px; 
-  background:#c26d8a;
-  padding:10px;
-  color:white;
-
-  cursor:pointer;
-  
-}
-
-ul li:hover{
-  background:#FB8696;
-
-}
-ul li:last-child{
-  border-bottom-left-radius:4px;
-  border-bottom-right-radius:4px;
-}
-label:before{
-  height:3px;
-  width:20px;
-  background:white;
-  display:inline-block;
-  content:"";
-  box-shadow:0px -5px 0px 0px  white,
-             0px -10px 0px 0px white;
-  margin-right:10px;
-  transition:all .5s;
-  position:relative;
-  opacity:1;
-}
-label{
-  display:block;
-  background:#c26d8a;
-  padding:0;
-  font-size: 50px;
-  font-family: MV Boli;
-  color:white;  
-  cursor:pointer; 
-}
-input[type="checkbox"]{
-  visibility:hidden;
-  position:absolute;
-}
-#collapse:checked ~ li{
-  display:none;
-  margin-top:0; 
-}
-#collapse:checked + label:before{
-  position:sticky ;
-  right:calc(-160px);
-  opacity:1;
-  
-}
-
-
-.btn-t {
-
-  background-color: #1DA1F2;
-  color: white;
-  font-size: 100px;
-  border: none;
-  
-  cursor: pointer;
-  text-align: center;
-  font-family: Bahnschrift SemiBold;
-
-  
-}
-.btn-f {
-
-  background-color:black;
-  color: darkred;
-  font-size: 100px;
-  font-family: Bahnschrift SemiBold;
-  cursor: pointer;
-
-  border: none;
-  text-align: center;
-
-  
-}
-.btn-g {
-
-  background-color: red;
-  color: white;
-  border: none;
-  font-size: 100px;
-  cursor: pointer;
-
-  text-align: center;
-  font-family: Bahnschrift SemiBold;
-
-}
-
-
-.container{
-  text-align: center;
-}
-.mix{
-  color: white;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   background-color: #823b53;
 }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#rm:hover {
+  background-color: #111;
+}
+
 
 #rm
 {
   text-decoration: none;
   color: white;
+  font-size: 25px;
+}
+
+#tp{
+ font-size: 30px;
+
+}
+
+
+
+
+
+img {
+  width: 150px;
+}
+
+p{
+  font-family: Franklin Gothic Medium;
+  color: white;
+  font-size: 25px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right , .middle{
+  width: 30%;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#ways{
+text-align: center;
+color: white;
+font-size: 30px;
+background: #823b53;
+font-family: Franklin Gothic Medium;
+}
+h2{
+ text-align: center; 
 }
 
 
@@ -148,43 +107,63 @@ input[type="checkbox"]{
 
 
 
+
 </head>
 <body>
 
+
 <ul>
-      <input type="checkbox" id="collapse"/> 
-      <label for="collapse"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span class='mix'>Domina Florsheim<span> </label>    
-             
-      <li><a id='rm' href="{% url 'home' %}">Home</a></li>
-       <li><a id='rm' href="{% url 'about' %}">About me</a></li>
-       <li><a id='rm' href="{% url 'gallery' %}">Gallery</a></li>
-       <li><a  id='rm'href="{% url 'contact' %}">Contact me</a></li>
-       <li><a id='rm' href="{% url 'tribute' %}">Send Tribute</a></li>
-     
+  <li><a id='tp'>DOMINA FLORSHEIM</a></li>
+
+  <li><a id='rm' href="{% url 'home' %}">Home</a></li>
+   <li><a id='rm' href="{% url 'about' %}">About me</a></li>
+
+   <li><a id='rm' href="{% url 'gallery' %}">Gallery</a></li>
+   <li><a  id='rm'href="{% url 'contact' %}">Contact/Tribute</a></li>
+   <li><a id='rm' href="{% url 'clips' %}">Clips</a></li>
+   <li><a id='rm' href="{% url 'services' %}">Services</a></li>
 </ul>
 
+<br><br><br>
+
+
+<h2 ><span id='ways'> Ways to Contact/Tribute me</span> <h2>
 
 
 
 
 
-
-
-
-
-
-
-<div class="container">
-  <a href="https://twitter.com/DominaFlorsheim"></a>
-  <a href="https://fetlife.com/users/14554719"></a>
-  <a href="mailto:dominaflorsheim@yahoo.com?subject=Booking session"></a>
-  <button class="btn-t" onclick="window.location.href='https://twitter.com/DominaFlorsheim'">Twitter</button>
-  &emsp;&emsp;
-  <button class="btn-f" onclick="window.location.href='https://fetlife.com/users/14554719'">Fetlife</button>
-  &emsp;&emsp;
-  <button class="btn-g" onclick="window.location.href='mailto:dominaflorsheim@yahoo.com?subject=Booking session'">Mail</button>
-  
+<div class="row">
+  <div class="column left">
+  <a href="https://twitter.com/DominaFlorsheim"> <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png"></a>
+    <p>Contact me on Twitter</p>
   </div>
+  <div class="column middle" >
+    <a href="https://fetlife.com/users/14554719"> <img src="https://seeklogo.com/images/F/fetlife-logo-58B70DB273-seeklogo.com.png?v=637836257780000000"></a>
+    <p>Contact me on Fetlife</p>
+  </div>
+  <div class="column right">
+    <a href="https://www.loyalfans.com/florsheim"> <img src="https://whichfansite.com/wp-content/uploads/2022/01/loyalfans-review-1-135x135.png"></a>
+    <p>Follow me on Loyal Fans</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column left">
+  <a href="https://www.paypal.com/paypalme/romeliasoriano"> <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png"></a>
+  <p>PayPal me</p>
+  </div>
+  <div class="column middle" >
+    <a href="mailto:dominaflorsheim@yahoo.com?subject=Booking session"> <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/172206i70472167E79B9D0F/image-size/large?v=v2&px=999"></a>
+    <p>Drop an Email</p>
+  </div>
+  <div class="column right">
+    <a href="https://wa.me/639196191611/?text=Hi!"> <img src="https://www.freepnglogos.com/uploads/whatsapp-png-image-9.png"></a>
+    <p>Whatsapp me</p>
+  </div>
+</div>
+
+<p >Note : Click on the Icons</p>
 
 
 </body>
