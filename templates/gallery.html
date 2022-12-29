@@ -133,27 +133,15 @@ li a {
    <li><a id='rm' href="{% url 'services' %}">Services</a></li>
 </ul>
 
-
+<div class="header">
+    {% for x in video %}
+    <h3 class="center">{{x.caption}}</h3>
+    
+    <img src="{{x.video.url}}">
+  {% endfor %}
+  </div>
 
 <br><br><br>
-
-<div class="header">
-  <img src="https://i.imgur.com/M612ZAP.jpg" class="center" >
-  <img src="https://i.imgur.com/Hkb4Ujv.jpg" class="center" >
-  <img src="https://i.imgur.com/eWEvidW.jpg" class="center" >
-  <img src="https://i.imgur.com/zaFzhLE.jpg" class="center" >
-  <img src="https://i.imgur.com/IjoEpdZ.jpg" class="center" >
-  <img src="https://i.imgur.com/E9So1Ot.jpg" class="center" >
-  <img src="https://i.imgur.com/k6MGy8v.jpg" class="center" >
-  <img src="https://i.imgur.com/l6fQ3O0.jpg" class="center" >
-  <img src="https://i.imgur.com/b1KVzCo.jpg" class="center" >
-  <img src="https://i.imgur.com/4PtVfv2.jpg" class="center" >
-  <img src="https://i.imgur.com/26VJjTH.jpg" class="center" >
-  <img src="https://i.imgur.com/WIPoLli.jpg" class="center" >
-  <img src="https://i.imgur.com/b1KVzCo.jpg" class="center" >
- <br><br>
-
-</div>
 
 
 
@@ -181,3 +169,26 @@ li a {
 
 </html>
 
+
+
+
+<!--
+
+<div class="header">
+  <img src="https://i.imgur.com/M612ZAP.jpg" class="center" >
+  <img src="https://i.imgur.com/Hkb4Ujv.jpg" class="center" >
+  <img src="https://i.imgur.com/eWEvidW.jpg" class="center" >
+  <img src="https://i.imgur.com/zaFzhLE.jpg" class="center" >
+  <img src="https://i.imgur.com/IjoEpdZ.jpg" class="center" >
+  <img src="https://i.imgur.com/E9So1Ot.jpg" class="center" >
+  <img src="https://i.imgur.com/k6MGy8v.jpg" class="center" >
+  <img src="https://i.imgur.com/l6fQ3O0.jpg" class="center" >
+  <img src="https://i.imgur.com/b1KVzCo.jpg" class="center" >
+  <img src="https://i.imgur.com/4PtVfv2.jpg" class="center" >
+  <img src="https://i.imgur.com/26VJjTH.jpg" class="center" >
+  <img src="https://i.imgur.com/WIPoLli.jpg" class="center" >
+  <img src="https://i.imgur.com/b1KVzCo.jpg" class="center" >
+ <br><br>
+
+</div>
+-->

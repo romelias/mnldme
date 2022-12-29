@@ -1,5 +1,6 @@
 from .views import *
 from django.urls import path
+from .views import *
 from  webapp import views
 urlpatterns = [
     path('', home, name='home'),
@@ -10,3 +11,5 @@ urlpatterns = [
     path('clips/', clips, name='clips'),
     path('services/', services, name='services')
 ]
+
+
