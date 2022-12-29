@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Images
+
 # Create your views here.
 
 def home(request):
@@ -11,8 +11,8 @@ def about(request):
 
 
 def gallery(request):
-    video=Images.objects.all()
-    return render(request,"gallery.html",{"video":video})
+ 
+    return render(request,"gallery.html")
 
 def contact(request):
     return render(request,'contact.html')
